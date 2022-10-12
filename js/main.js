@@ -17,3 +17,5 @@ function compareLength (line, len) {
 
 getRandomInRange(1, 12);
 compareLength('HTML', 3);
+
+
