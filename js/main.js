@@ -42,10 +42,10 @@ const createPost = (index) => ({
 createPost();
 
 const createArrayOfPosts = () => {
-  const post = Array.from({ length: COUNTS_ELEMENTS }, (_, index) =>
+  const posts = Array.from({ length: COUNTS_ELEMENTS }, (_, index) =>
   createPost(index + 1)
   );
-  return post;
+  return posts;
 };
 
 createArrayOfPosts();
