@@ -30,3 +30,22 @@ const RANDOM_COMMENTS = [
   'Самое крутое доказательство того, что я умею делать фотки, лучше чем вы.',
   'Котики, ну куда же без них?',
 ];
+
+const createPost = (index) => ({
+  id: index,
+  url: `photos/${index}.jpg`,
+  description: RANDOM_COMMENTS[Math.floor(Math.random() * RANDOM_COMMENTS.length)],
+  likes: getRandomInRange(15, 200),
+  comments: getRandomInRange(0, 200),
+});
+
+createPost();
+
+const createArrayOfPosts = () => {
+  const post = Array.from({ length: COUNTS_ELEMENTS }, (_, index) =>
+  createPost(index + 1)
+  );
+  return post;
+};
+
+createArrayOfPosts();
