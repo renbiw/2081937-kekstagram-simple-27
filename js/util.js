@@ -1,17 +1,14 @@
-function getRandomInRange(min, max) {
-  const isValid = min < 0 || max < 0;
-  const reverseMax = min;
-  const reverseMin = max;
-  if (isValid) {
+const getRandomInRange = (min, max) => {
+  const isNegative = min < 0 || max < 0;
+  const trueMax = Math.max(min, max);
+  const trueMin = Math.min(min, max);
+  if (isNegative) {
     throw new RangeError('Число должно быть из диапазона неотрицательных чисел');
   }
-  if (min > max) {
-    return Math.floor(Math.random() * (reverseMax - reverseMin + 1)) + reverseMin;
-  }
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+  return Math.floor(Math.random() * (trueMax - trueMin + 1)) + trueMin;
 }
 
-function compareLength (line, len) {
+const compareLength = (line, len) => {
   return len >= line.length
 }
 
