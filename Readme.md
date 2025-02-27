@@ -1,9 +1,5 @@
 # Личный проект «Кекстаграм (простой)»
 
-* Студент: [Лена Макарова](https://up.htmlacademy.ru/javascript/27/user/2081937).
-* Наставник: [Николай Усов](https://htmlacademy.ru/profile/id1493681).
-
----
 
 _Не удаляйте и не изменяйте самовольно файлы и папки:_
 _`.editorconfig`, `.eslintrc`, `.gitattributes`, `.gitignore`, `package-lock.json`, `package.json`., `.github`_
